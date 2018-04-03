@@ -1,11 +1,11 @@
 <h1>Tasks#create</h1>
 
-<%= form_for(restaurant) do |f| %>
+<%= form_for(@task) do |f| %>
   <%= f.label :title, "Enter a title" %>
   <%= f.text_field :title %>
 
   <%= f.label :details, "Enter details of this task" %>
   <%= f.text_field :details %>
   <%= f.submit %>
-  <% end %>
+<% end %>
 <p>Find me in app/views/tasks/create.html.erb</p>
