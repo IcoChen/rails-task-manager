@@ -1,0 +1,16 @@
+<h1>Tasks#edit</h1>
+
+
+
+<%= @task=Task.new %>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :title, "Enter a title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details, "Enter details of this task" %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+
+<p>Find me in app/views/tasks/edit.html.erb</p>
